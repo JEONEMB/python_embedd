@@ -33,13 +33,13 @@ def run(estimation_model, camera_id, width, height):
             print(class_name)
             return class_name
             # 여기까지
-        elif left_wrist.y < left_shoulder.y:
+        elif right_wrist.y < right_shoulder.y:
             class_name = "left_hand_up"
             cap.release()
             cv.destroyALLWindows()
             print(class_name)
             return class_name
-        elif right_wrist.y < right_shoulder.y:
+        elif left_wrist.y < left_shoulder.y:
             class_name = "right_hand_up"
             cap.release()
             cv.destroyALLWindows()
