@@ -47,10 +47,7 @@ def run(estimation_model, camera_id, width, height):
             return class_name
         else:
             class_name = "non_handup"
-            cap.release()
-            cv.destroyALLWindows()
-            print(class_name)
-            return class_name
+
             
         cv2.putText(image, class_name, (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
         cv2.imshow(estimation_model, image)
