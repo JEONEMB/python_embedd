@@ -30,6 +30,7 @@ def run(estimation_model, camera_id, width, height):
             # 이하 추가 새로운 코드
             cap.release()
             cv.destroyALLWindows()
+            
             return class_name
             # 여기까지
         elif left_wrist.y < left_shoulder.y:
